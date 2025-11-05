@@ -18,7 +18,7 @@ mongoose.connection.on('error', (e) => console.error('Mongo error:', e.message))
 app.use(bodyParser.json());
 
 // Simple test route (add this here)
-app.get('/api', (req, res) => {
+app.get('/', (req, res) => {
   res.json({ message: "API running smoothly" });
 });
 
